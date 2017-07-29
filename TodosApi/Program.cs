@@ -16,7 +16,7 @@ namespace TodosApi
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
-                .UseStartup<Startup>()
+                .UseStartup<TodoApi.Startup>()
                 .Build();
 
             host.Run();
